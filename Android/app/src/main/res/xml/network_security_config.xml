@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permit all cleartext traffic (you can restrict to your IP/domain instead) -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

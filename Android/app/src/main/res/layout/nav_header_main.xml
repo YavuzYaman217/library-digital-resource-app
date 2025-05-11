@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="?attr/colorPrimaryContainer"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivHeaderAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_profile_placeholder"
+        android:contentDescription="@string/avatar"/>
+
+    <TextView
+        android:id="@+id/tvNavName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="?attr/colorOnPrimaryContainer"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNavEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="you@example.com"
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:textColor="?attr/colorOnPrimaryContainer"/>
+
+
+
+</LinearLayout>

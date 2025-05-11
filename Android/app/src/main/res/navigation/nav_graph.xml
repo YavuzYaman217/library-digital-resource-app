@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <!-- Search -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.yyaman.libraryapp.search.SearchFragment"
+        android:label="Search Books"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- Digital Resources -->
+    <fragment
+        android:id="@+id/digitalListFragment"
+        android:name="com.yyaman.libraryapp.digital.DigitalListFragment"
+        android:label="Digital Resources"
+        tools:layout="@layout/fragment_digital_list" />
+
+    <!-- Reservations -->
+    <fragment
+        android:id="@+id/reservationsFragment"
+        android:name="com.yyaman.libraryapp.reservations.ReservationsFragment"
+        android:label="My Reservations"
+        tools:layout="@layout/fragment_reservations" />
+
+    <!-- Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.yyaman.libraryapp.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.yyaman.libraryapp.bookmarks.BookmarksFragment"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmarks" />
+
+    <!-- Settings -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.yyaman.libraryapp.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

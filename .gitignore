@@ -1,0 +1,71 @@
+# =========================================================
+# ANDROID / KOTLIN
+# =========================================================
+
+# Gradle & AGP artefacts
+.gradle/
+**/build/                        # module-level build klasörleri
+/build/                          # kök build (Gradle Configuration Cache)
+.gradle/**/           ⬆️        # alt .gradle dizinleri
+
+# IDE & config
+.idea/
+/*.iml
+**/*.iml
+*.iws
+*.ipr
+local.properties
+
+# Native & CMake
+.externalNativeBuild/
+.cxx/
+
+# Test captures
+captures/
+
+# Keystores (şahsi dosyalar)
+*.jks
+*.keystore
+app/debug.keystore
+
+# OS & misc
+.DS_Store
+Thumbs.db
+*.log
+*.orig                          # 3-way merge artıkları
+*.swp                           # Vim/IDE swap files
+
+# =========================================================
+# PYTHON / FLASK
+# =========================================================
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Byte-code & cache
+__pycache__/
+*.py[cod]
+
+# Flask instance & SQLite
+instance/
+*.db
+library.db
+
+# Alembic migrations (versioned ⇒ genelde track edilmeli)
+# migrations/                   ⬇️ İstersen tutulabilir, dışlamak için satırı aç
+
+# Env-vars & secrets
+.env
+.env.*
+.flaskenv
+
+# Logs
+*.log
+
+# =========================================================
+# GLOBAL EXCEPTIONS (gerekliyse)
+# =========================================================
+!gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
